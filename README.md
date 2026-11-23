@@ -1,4 +1,4 @@
-# VYRE Audio Desktop 2.0.0
+# VYRE Audio 2.0.0
 
 VYRE Audio Desktop is a calibration application with an independent native DSP engine. It works from Audyssey measurement data to calculate equalization, levels, distances, crossover settings and subwoofer optimization, then exports an Audyssey calibration file. Supported workflows include multi-subwoofer configurations.
 
