@@ -1,0 +1,7 @@
+# VYRE Audio 2.1.1 Windows installer — license notes
+
+The final Windows x64 installer is a custom NSIS 3.04 installer (electron-builder NSIS toolset 3.0.4.1), copyright 1999–2018 NSIS contributors. Inspection of the final EXE found the NSIS stub, the Unicode standard `nsDialogs.dll` and `System.dll`, and Deflate compression. NSIS, those standard plugins and the zlib compression module use the zlib/libpng terms in [third-party/NSIS-COPYING.txt](third-party/NSIS-COPYING.txt). A copy is also installed as `NSIS-LICENSE.txt`.
+
+The inspected EXE does not contain StdUtils, Nsis7z, WinShell or the old `elevate.exe`. The application includes Electron's `LICENSE.electron.txt` and its Windows-specific `LICENSES.chromium.html`; a separate copy of the latter is [third-party/LICENSES.chromium-windows.html](third-party/LICENSES.chromium-windows.html). FFmpeg source, Electron patches and build references are provided in [third-party/FFmpeg-Electron-45.5.0/README.md](third-party/FFmpeg-Electron-45.5.0/README.md); complete build reproduction and modified-library execution have not been independently verified. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+The already-built application's internal `THIRD_PARTY_NOTICES.md` describes an older installer. This external note and the updated external third-party notices describe the current installer and must accompany the release artifacts. VYRE Audio remains proprietary.
