@@ -1,33 +1,70 @@
-# VYRE Audio 2.0.0
+# VYRE Audio
 
-VYRE Audio Desktop is a calibration application with an independent native DSP engine. It works from Audyssey measurement data to calculate equalization, levels, distances, crossover settings and subwoofer optimization, then exports an Audyssey calibration file. Supported workflows include multi-subwoofer configurations.
+VYRE Audio is a free room calibration application with an independent native DSP engine, designed for Denon and Marantz AV receivers with Audyssey support.
 
-Normal native calibration does not require a separate REW installation.
+Using acoustic measurement data, VYRE calculates equalization, speaker levels, distances, crossover settings and multi-subwoofer optimization before exporting an Audyssey calibration file.
+
+Native calibration does not require a separate REW installation.
+
+## Features
+
+- Independent native DSP and calibration engine.
+- Advanced multi-subwoofer optimization.
+- Standard, SWMIX and Directional Bass support.
+- Automatic crossover and polarity optimization.
+- Custom target curves and manual PEQ adjustments.
+- Target Curve Studio.
+- Calibration presets and detailed response visualization.
+- Automatic update notifications.
+- Customizable user interface with multiple built-in themes.
+- Community plugin, theme and engine support.
 
 ## Downloads
 
-Installers are distributed through the repository's **GitHub Releases** page. The final repository address has not yet been set; the release-page link will be added here when it is available.
+Download the latest version from the [GitHub Releases page](https://github.com/EmiCoreV/VYRE-Audio/releases/latest).
 
-- **Windows x64:** `VYRE Audio Setup 2.0.0.exe`
-- **macOS ARM64 / Apple Silicon:** `VYRE Audio-2.0.0-arm64.dmg`
+Supported platforms:
+
+- **Windows (x64)**
+- **macOS (Apple Silicon / ARM64)**
+- **Linux (x64) - Experimental**
+- **Linux (ARM64) - Experimental**
 
 ## Installation
 
-On Windows, download and run the `.exe` installer. On an Apple Silicon Mac, open the `.dmg` and install the application from the disk image. The desktop application includes its runtime; Node.js, npm and other development tools do not need to be installed separately.
+**Windows:** Download and run the EXE installer.
 
-The current installers are not digitally signed. Windows and macOS may display security warnings when opening unsigned software.
+**macOS:** Open the DMG file and move VYRE Audio to your Applications folder.
 
-## Community extensions
+**Linux:** Extract the TAR.GZ archive and launch the application. Linux builds are currently experimental.
 
-VYRE Audio supports community themes and plugins. The **Community Theme SDK** styles and arranges supported host controls. The **Community Plugin SDK** provides sandboxed capabilities, including the Universal Extension API for supported native integration points. The independent **Engine API 2** lets a plugin provide its own calibration engine and export workflow.
+All builds include the required application runtime. Node.js, npm and other development tools do not need to be installed separately.
 
-- [Theme SDK documentation](VYRE_THEME_SDK.md)
-- [Plugin and Engine SDK documentation](VYRE_PLUGIN_ENGINE_SDK.md)
+The Windows installer is unsigned. The macOS application is ad-hoc signed but not Apple-notarized. Operating system security warnings may therefore appear.
 
-Third-party extensions run under the application's existing permission and validation rules. Only install extensions from sources you trust.
+## Community Extensions
 
-## License and copyright
+VYRE Audio provides dedicated SDKs for community developers.
+
+- **Community Theme SDK:** Create custom themes and personalize the VYRE Audio interface.
+- **Community Plugin SDK:** Extend native calibration functionality, integrate external measurement sources, provide custom target curves and add new features through the Universal Extension API.
+- **Engine API 2:** Develop independent calibration engines and export workflows.
+
+Documentation:
+
+- [Theme SDK Documentation](VYRE_THEME_SDK.md)
+- [Plugin and Engine SDK Documentation](VYRE_PLUGIN_ENGINE_SDK.md)
+
+Third-party extensions operate within the application's permission and validation rules. Only install extensions from sources you trust.
+
+## License and Copyright
 
 Copyright © 2026 Emelie / EmiCoreV. All rights reserved.
 
-VYRE Audio is free to use and is proprietary software. Providing the application free of charge does not make it open source. No additional rights to redistribute, modify or publish the proprietary source code are granted without express permission. Third-party components are subject to their respective licenses; see [Third-Party Notices](THIRD_PARTY_NOTICES.md).
+VYRE Audio is free to use and is proprietary software. Providing the application free of charge does not make it open source.
+
+No additional rights to redistribute, modify or publish the proprietary source code are granted without express permission.
+
+Third-party components are subject to their respective licenses. See the [Third-Party Notices](THIRD_PARTY_NOTICES.md) and [VYRE License Notice](VYRE-LICENSE-NOTICE.md) for further information.
+
+Corresponding third-party source packages are provided alongside the applicable releases.
